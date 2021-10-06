@@ -1,16 +1,16 @@
 <ion-menu side="start" menuId="first" contentId="main">
     <ion-header>
       <ion-toolbar color="primary">
-        <ion-title>Start Menu</ion-title>
+        <ion-title>Duoc Maps</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
+        <ion-item>Inicio</ion-item>
+        <ion-item>Horario</ion-item>
+        <ion-item>Actividades</ion-item>
+        <ion-item>Anuncios</ion-item>
+        <ion-item>Puntos de interés</ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>
@@ -32,8 +32,38 @@
 
   
   <ion-router-outlet id="main"></ion-router-outlet>
-<ion-content padding>
-        <ion-row class="ion-align-items-center">
+<ion-content >
+    <ion-searchbar class="ion-margin-top"></ion-searchbar>
+
+    <ion-slides [options]="option" class="ion-margin-top">
+
+        <ion-slide>
+            <ion-card>
+                <img src="assets/images/01.jpg">
+            </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card>
+                <img src="assets/images/02.jpg">
+            </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card>
+                <img src="assets/images/03.jpg">
+            </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card>
+                <img src="assets/images/04.jpg">
+            </ion-card>
+        </ion-slide>
+
+    </ion-slides>
+
+        <ion-row class="ion-align-items-center ion-margin-top">
             <ion-col size="10" offset="1">
                 <ion-button
                     href="horario"
