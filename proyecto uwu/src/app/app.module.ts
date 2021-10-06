@@ -13,6 +13,12 @@ import { AppComponent } from './app.component';
 import { ActivitiesComponent } from 'src/pages/activities/activities.component';
 import { NoticeComponent } from 'src/pages/notice/notice.component';
 import { PointComponent } from 'src/pages/point/point.component';
+import { FoodPlaceComponent } from 'src/pages/food Place/foodPlace.component';
+import { BibliotecaComponent } from 'src/pages/Biblioteca/Biblioteca.component';
+import { EnfermeriaComponent } from 'src/pages/Enfermeria/Enfermeria.component';
+import { FinanzasComponent } from 'src/pages/Finanzas/Finanzas.component';
+import { PuntoEstudiantilComponent } from 'src/pages/PuntoEstudiantil/PuntoEstudiantil.component';
+
 
 @NgModule({
   declarations: [AppComponent,
@@ -22,7 +28,12 @@ import { PointComponent } from 'src/pages/point/point.component';
      RestoreComponent,
      ActivitiesComponent,
      NoticeComponent,
-     PointComponent],
+     PointComponent,
+     FoodPlaceComponent,
+     BibliotecaComponent,
+     EnfermeriaComponent,
+     FinanzasComponent,
+     PuntoEstudiantilComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

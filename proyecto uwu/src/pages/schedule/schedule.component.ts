@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./schedule.component.css']
 })
 export class ScheduleComponent {
-    
+    value: string = "1"
 }

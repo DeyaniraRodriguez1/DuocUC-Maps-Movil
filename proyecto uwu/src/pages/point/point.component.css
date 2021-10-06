@@ -1,3 +1,9 @@
+.ion-color{
+    background-color: gold
+}
 .completa {
     height: 100%;
+}
+.button{
+    text-align: left;
 }

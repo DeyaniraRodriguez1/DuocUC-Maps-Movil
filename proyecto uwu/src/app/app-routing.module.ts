@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from 'src/pages/login/login.component';
 import { MainComponent } from 'src/pages/main/main.component';
@@ -7,6 +7,12 @@ import { RestoreComponent } from 'src/pages/restore/restore.component';
 import { ActivitiesComponent } from 'src/pages/activities/activities.component';
 import { NoticeComponent } from 'src/pages/notice/notice.component';
 import { PointComponent } from 'src/pages/point/point.component';
+import { FoodPlaceComponent } from 'src/pages/food Place/foodPlace.component';
+import { BibliotecaComponent } from 'src/pages/Biblioteca/Biblioteca.component';
+import { FinanzasComponent } from 'src/pages/Finanzas/Finanzas.component';
+import { EnfermeriaComponent } from 'src/pages/Enfermeria/Enfermeria.component';
+import { PuntoEstudiantilComponent } from 'src/pages/PuntoEstudiantil/PuntoEstudiantil.component';
+
 
 const routes: Routes = [
   {
@@ -36,7 +42,31 @@ const routes: Routes = [
   {
     path: 'puntoInteres',
     component: PointComponent
+  },
+  {
+    path: 'localDeComida',
+    component: FoodPlaceComponent
+  },
+  {
+    path: 'Biblioteca',
+    component: BibliotecaComponent
+
+  },
+  {
+    path: 'Enfermeria',
+    component: EnfermeriaComponent
+  },
+  {
+    path: 'Finanzas',
+    component: FinanzasComponent
+  },
+  {
+    path: 'PuntoEstudiantil',
+    component: PuntoEstudiantilComponent
   }
+
+
+
 ];
 @NgModule({
   imports: [
