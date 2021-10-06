@@ -34,7 +34,7 @@ const routes: Routes = [
     component: NoticeComponent
   },
   {
-    path: 'PuntoInteres',
+    path: 'puntoInteres',
     component: PointComponent
   }
 ];
