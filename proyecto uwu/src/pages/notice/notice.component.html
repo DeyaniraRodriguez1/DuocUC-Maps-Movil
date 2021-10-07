@@ -28,22 +28,17 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-header translucent>
-    <ion-toolbar>
-      <ion-title>Refresher</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <ion-content>
     <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
       <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpinner="circles" refreshingText="Actualizando..."></ion-refresher-content>
     </ion-refresher>
-
-    <ion-item class="ion-text-center" *ngFor="let aviso of aviso">
-
-            <h2 class="center">{{ aviso.titulo }}</h2>
- 
-
-    </ion-item>
-
+    <ion-card *ngFor="let aviso of aviso">
+      <ion-card-header>
+        <ion-card-title class="center-text">{{ aviso.titulo }}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        {{ aviso.des}}
+      </ion-card-content>
+    </ion-card>
   </ion-content>
