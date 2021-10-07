@@ -9,6 +9,7 @@
         <ion-item color="light"href="principal"><ion-icon name="home-outline"></ion-icon> Inicio</ion-item>
         <ion-item color="light"href="puntoInteres"><ion-icon name="location-outline"></ion-icon> Puntos de Interes</ion-item>
         <ion-item color="light"href="anuncios"><ion-icon name="megaphone-outline"></ion-icon> Anuncios</ion-item>
+        <ion-item color="light" (click)="pop2click($event)"><ion-icon name="list-outline"></ion-icon> Salas de Clase</ion-item>
       </ion-list>
     </ion-content>  
   </ion-menu>
@@ -30,7 +31,7 @@
   
 
 <ion-content >
-    <ion-searchbar class="ion-margin-top"></ion-searchbar>
+    <ion-searchbar placeholder="Buscar sala" class="ion-margin-top"></ion-searchbar>
 
     <ion-slides [options]="option" class="ion-margin-top">
 
@@ -61,17 +62,6 @@
     </ion-slides>
 
         <ion-row class="ion-align-items-center ion-margin-top">
-            <ion-col size="10" offset="1">
-                <ion-button
-                    href=""
-                    color="dark"
-                    expand="block"
-                    size="small"
-                >
-                    Horario
-                </ion-button>
-
-            </ion-col>
 
             <ion-col size="10" offset="1">
                 <ion-button
