@@ -1,19 +1,18 @@
-<ion-menu side="start" menuId="first" contentId="main">
+<ion-menu side="start" menuId="first" contentId="main" [swipeGesture]="true">
     <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Duoc Maps</ion-title>
+      <ion-toolbar color="warning" >
+        <ion-title >Duoc Maps</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item>Inicio</ion-item>
-        <ion-item>Horario</ion-item>
-        <ion-item>Actividades</ion-item>
-        <ion-item>Anuncios</ion-item>
-        <ion-item>Puntos de interés</ion-item>
+        <ion-item color="light"href="principal"><ion-icon name="home-outline"></ion-icon> Inicio</ion-item>
+        <ion-item color="light"href="puntoInteres"><ion-icon name="location-outline"></ion-icon> Puntos de Interes</ion-item>
+        <ion-item color="light"href="anuncios"><ion-icon name="megaphone-outline"></ion-icon> Anuncios</ion-item>
       </ion-list>
-    </ion-content>
+    </ion-content>  
   </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
   
   <ion-header>
     <ion-toolbar>
@@ -30,8 +29,6 @@
   </ion-header>
   
 
-  
-  <ion-router-outlet id="main"></ion-router-outlet>
 <ion-content >
     <ion-searchbar class="ion-margin-top"></ion-searchbar>
 
@@ -66,7 +63,7 @@
         <ion-row class="ion-align-items-center ion-margin-top">
             <ion-col size="10" offset="1">
                 <ion-button
-                    href="horario"
+                    href=""
                     color="dark"
                     expand="block"
                     size="small"
@@ -74,16 +71,6 @@
                     Horario
                 </ion-button>
 
-            </ion-col>
-            <ion-col size="10" offset="1">
-                <ion-button
-                    href="actividades"
-                    color="dark"
-                    expand="block"
-                    size="small"
-                >
-                    Actividades
-                </ion-button>
             </ion-col>
 
             <ion-col size="10" offset="1">
