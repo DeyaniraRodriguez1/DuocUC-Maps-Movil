@@ -7,11 +7,15 @@ import { NoticeComponent } from 'src/pages/notice/notice.component';
 import { PointComponent } from 'src/pages/point/point.component';
 import { FoodPlaceComponent } from 'src/pages/food Place/foodPlace.component';
 import { BibliotecaComponent } from 'src/pages/Biblioteca/Biblioteca.component';
+import { RegisterComponent } from 'src/pages/register/register.component';
+import { ProfileComponent } from 'src/pages/profile/profile.component';
 
 
 import { EnfermeriaComponent } from 'src/pages/Enfermeria/Enfermeria.component';
 import { FinanzasComponent } from 'src/pages/Finanzas/Finanzas.component';
 import { PuntoEstudiantilComponent } from 'src/pages/PuntoEstudiantil/PuntoEstudiantil.component';
+import { AuthGuard } from './guards/auth.guard';
+
 
 
 const routes: Routes = [
@@ -20,12 +24,21 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'registro',
+    component: RegisterComponent
+  },
+  {
     path: 'recuperar',
     component: RestoreComponent
   },
   {
     path: 'principal',
-    component: MainComponent
+    component: MainComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'profile/edit',
+    component: ProfileComponent
   },
   {
     path: 'anuncios',

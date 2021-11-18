@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { ModalController, PopoverController, AlertController } from "@ionic/angular";
+import { AuthService } from "src/app/services/auth.service";
 import { ClosemodComponent } from "../modals/closemod/closemod.component";
 import { PerfilmodComponent } from "../modals/perfilmod/perfilmod.component";
 
@@ -11,10 +12,13 @@ import { PerfilmodComponent } from "../modals/perfilmod/perfilmod.component";
 })
 export class PopoverComponent {
     
-    constructor(public popoverController: PopoverController,
-                private modalCtrl: ModalController,
-                public alertController: AlertController,
-                private route:Router){}
+    constructor(
+      public popoverController: PopoverController,
+      private modalCtrl: ModalController,
+      public alertController: AlertController,
+      private route:Router,
+      private auth: AuthService
+      ){}
     
     async perfilModal(){
         const mPerfil = await this.modalCtrl.create({
@@ -52,8 +56,8 @@ export class PopoverComponent {
             }, {
               text: 'Aceptar',
               handler: () => {
-                this.route.navigate([''])
-                this.close()
+                this.auth.singOut()
+                
                 console.log('Confirm Okay');
               }
             }

@@ -6,12 +6,13 @@
     </ion-row>
     <ion-item>
         <ion-avatar slot="start">
-          <img src="https://scontent-scl2-1.xx.fbcdn.net/v/t1.6435-9/233132896_4841244149223004_1587343291232776760_n.png?_nc_cat=111&ccb=1-5&_nc_sid=973b4a&_nc_ohc=FneVgB-PobMAX-KULGA&_nc_ht=scontent-scl2-1.xx&oh=be038c97ba40c16ef56b4efad5805e6f&oe=6183F41E">
+          <img src="https://upload-os-bbs.hoyolab.com/upload/2021/09/02/30972688/a9c9fbb096c0950ec927a24d245265df_3530245620311255838.jpg">
         </ion-avatar>
         <ion-label>
-            <p>Anton Branson Jeldres Andrades</p>
-            <p>Analista Programador Computacional</p>
-            <p>rut: 21.231.098</p>
+            <p>{{ user?.userName }}</p>
+            <p>{{ user?.userEmail }}</p>
+            <p>{{ user?.userPhone }}</p>
+            <p>{{ user?.createdAt | date }}</p>
         </ion-label>
       </ion-item>    
 </ion-content>
@@ -20,8 +21,11 @@
 
 <ion-footer class="ion-text-center">
     <ion-toolbar>
+        <ion-button (click)="gotoProfile()" (click)="dismiss()">
+            Editar
+        </ion-button>
         <ion-button (click)="dismiss()">
-            <ion-icon name="close-circle" slot="icon-only"></ion-icon>
+            Cerrar
         </ion-button>
     </ion-toolbar>
 </ion-footer>
