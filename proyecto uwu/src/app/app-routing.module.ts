@@ -16,6 +16,7 @@ import { FinanzasComponent } from 'src/pages/Finanzas/Finanzas.component';
 import { PuntoEstudiantilComponent } from 'src/pages/PuntoEstudiantil/PuntoEstudiantil.component';
 import { AuthGuard } from './guards/auth.guard';
 import { Iframemenos1Component } from 'src/pages/iframe/iframemenos1/iframemenos1.component';
+import { CalendarComponent } from 'src/pages/calendar/calendar.component';
 
 
 
@@ -36,6 +37,9 @@ const routes: Routes = [
     path: 'principal',
     component: MainComponent,
     canActivate: [AuthGuard]
+  },{
+    path: 'calendario',
+    component: CalendarComponent
   },
   {
     path: 'piso-1',

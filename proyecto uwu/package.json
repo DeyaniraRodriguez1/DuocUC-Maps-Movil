@@ -29,6 +29,8 @@
     "@ionic/angular": "^5.5.2",
     "crypto": "^1.0.1",
     "firebase": "^9.4.0",
+    "ion2-calendar": "^3.5.0",
+    "moment": "^2.29.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
@@ -51,6 +53,7 @@
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
     "cordova-android": "^9.1.0",
+    "cordova-plugin-calendar": "^5.1.5",
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-inappbrowser": "^5.0.0",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
@@ -85,7 +88,8 @@
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
       "cordova-plugin-ionic-keyboard": {},
-      "cordova-plugin-inappbrowser": {}
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-calendar": {}
     },
     "platforms": [
       "android"

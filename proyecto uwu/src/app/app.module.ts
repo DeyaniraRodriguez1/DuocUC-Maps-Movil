@@ -41,6 +41,8 @@ import { AuthGuard } from './guards/auth.guard';
 import { Iframemenos1Component } from 'src/pages/iframe/iframemenos1/iframemenos1.component';
 
 import { InAppBrowser} from '@ionic-native/in-app-browser/ngx';
+import { CalendarComponent } from 'src/pages/calendar/calendar.component';
+import { CalendarModule } from 'ion2-calendar';
 
 
 
@@ -60,7 +62,8 @@ import { InAppBrowser} from '@ionic-native/in-app-browser/ngx';
      RegisterComponent,
      PerfilmodComponent,
      ProfileComponent,
-     Iframemenos1Component],
+     Iframemenos1Component,
+     CalendarComponent],
   entryComponents: [],
   imports: [
     BrowserModule, 
@@ -71,7 +74,8 @@ import { InAppBrowser} from '@ionic-native/in-app-browser/ngx';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    CalendarModule
   ],
   providers: [
     AuthService,
