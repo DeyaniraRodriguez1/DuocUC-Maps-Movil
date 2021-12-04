@@ -24,7 +24,7 @@ export class LoginComponent {
         if(this.email && this.password){
             this.auth.singIn(this.email, this.password);
         } else {
-            this.toast('Please enter your email and password', 'warning');
+            this.toast('Por favor ingrese su correo y contraseña', 'warning');
         }
     }
 

@@ -36,7 +36,7 @@ export class AuthService {
 
   async singIn(email, password){
     const loading = await this.LoadingCtrl.create({
-      message: 'Authenticating..',
+      message: 'Autenticando..',
       spinner: 'crescent',
       showBackdrop: true
     });
@@ -47,7 +47,7 @@ export class AuthService {
       this.afauth.signInWithEmailAndPassword(email, password).then((data) =>{
         if(!data.user.emailVerified){
           loading.dismiss();
-          this.toast('Porfavor verifique su email', 'warning');
+          this.toast('Por favor verifique su email', 'warning');
           this.afauth.signOut();
         }else{
           loading.dismiss();

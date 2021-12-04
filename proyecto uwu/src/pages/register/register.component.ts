@@ -28,7 +28,7 @@ export class RegisterComponent {
     async register(){
         if(this.name && this.email && this.phone && this.password){
             const loading = await this.loadingCtrl.create({
-                message: 'proccessing..',
+                message: 'Registrando..',
                 spinner: 'crescent',
                 showBackdrop: true
             });
@@ -46,7 +46,7 @@ export class RegisterComponent {
                 })
                 .then(()=> {
                     loading.dismiss();
-                    this.toast('Registration Success!', 'success');
+                    this.toast('Registrado exitosamente', 'success');
                     this.router.navigate(['/']);
                 })
                 .catch(error =>{
@@ -59,7 +59,7 @@ export class RegisterComponent {
                 this.toast(error.message, 'danger');
             })
         } else {
-            this.toast('Please fill the form!', 'warning');
+            this.toast('Por favor llene el formulario!', 'warning');
         }
     }// Fin del Registro
 

@@ -15,6 +15,7 @@ import { EnfermeriaComponent } from 'src/pages/Enfermeria/Enfermeria.component';
 import { FinanzasComponent } from 'src/pages/Finanzas/Finanzas.component';
 import { PuntoEstudiantilComponent } from 'src/pages/PuntoEstudiantil/PuntoEstudiantil.component';
 import { AuthGuard } from './guards/auth.guard';
+import { Iframemenos1Component } from 'src/pages/iframe/iframemenos1/iframemenos1.component';
 
 
 
@@ -35,6 +36,10 @@ const routes: Routes = [
     path: 'principal',
     component: MainComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'piso-1',
+    component: Iframemenos1Component
   },
   {
     path: 'profile/edit',

@@ -38,7 +38,9 @@ import { AuthService } from './services/auth.service';
 
 //AUTH GUARD
 import { AuthGuard } from './guards/auth.guard';
+import { Iframemenos1Component } from 'src/pages/iframe/iframemenos1/iframemenos1.component';
 
+import { InAppBrowser} from '@ionic-native/in-app-browser/ngx';
 
 
 
@@ -57,7 +59,8 @@ import { AuthGuard } from './guards/auth.guard';
      PuntoEstudiantilComponent,
      RegisterComponent,
      PerfilmodComponent,
-     ProfileComponent],
+     ProfileComponent,
+     Iframemenos1Component],
   entryComponents: [],
   imports: [
     BrowserModule, 
@@ -73,6 +76,7 @@ import { AuthGuard } from './guards/auth.guard';
   providers: [
     AuthService,
     AuthGuard,
+    InAppBrowser,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
