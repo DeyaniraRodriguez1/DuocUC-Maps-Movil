@@ -8,16 +8,24 @@ import { IUsuario } from '../interfaz/IUsuario';
   providedIn: 'root'
 })
 export class UsuarioService {
-  private url: string = "http://localhost:3000/usuario";
+  private url: string = "https://my-json-server.typicode.com/Migue132/mockjson/advertisements";
   private cliente: HttpClient;
 
   constructor(moduloHttp: HttpClient) { 
     this.cliente = moduloHttp;
   }
 
-  public ListarUsuarios(): Observable<Array<IUsuario>>{
+  public listarUsuarios(): Observable<Array<IUsuario>>{
     return this.cliente.get<Array<IUsuario>>(this.url);
 
+  }
+
+  public agregarUsuario(usuarioNuevo: IUsuario): Observable<IUsuario> {
+    return this.cliente.post<IUsuario>(this.url, JSON.stringify(usuarioNuevo),{
+      headers: {
+        "Content-Type":"application/json"
+      }
+    });
   }
 
 }

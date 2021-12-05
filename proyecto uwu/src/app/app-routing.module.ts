@@ -39,44 +39,54 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },{
     path: 'calendario',
-    component: CalendarComponent
+    component: CalendarComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'piso-1',
-    component: Iframemenos1Component
+    component: Iframemenos1Component,
+    canActivate: [AuthGuard]
   },
   {
     path: 'profile/edit',
-    component: ProfileComponent
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'anuncios',
-    component: NoticeComponent
+    component: NoticeComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'puntoInteres',
-    component: PointComponent
+    component: PointComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'localDeComida',
-    component: FoodPlaceComponent
+    component: FoodPlaceComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'Biblioteca',
-    component: BibliotecaComponent
+    component: BibliotecaComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: 'Enfermeria',
-    component: EnfermeriaComponent
+    component: EnfermeriaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'Finanzas',
-    component: FinanzasComponent
+    component: FinanzasComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'PuntoEstudiantil',
-    component: PuntoEstudiantilComponent
+    component: PuntoEstudiantilComponent,
+    canActivate: [AuthGuard]
   }
 
 
