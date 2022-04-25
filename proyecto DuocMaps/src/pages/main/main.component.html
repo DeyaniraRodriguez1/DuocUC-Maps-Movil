@@ -1,0 +1,111 @@
+<ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Duoc Maps</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Inicio</ion-item>
+        <ion-item>Horario</ion-item>
+        <ion-item>Actividades</ion-item>
+        <ion-item>Anuncios</ion-item>
+        <ion-item>Puntos de interés</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Inicio<ion-icon name="caret-down-outline"></ion-icon></ion-title>
+      <ion-buttons slot="start">
+          <ion-menu-button menu="first"></ion-menu-button>
+      </ion-buttons>
+
+      <ion-button color="primary" fill="clear" slot="end" (click)="popclick($event)">
+          <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+
+    </ion-toolbar>
+  </ion-header>
+  
+
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+<ion-content >
+    <ion-searchbar class="ion-margin-top"></ion-searchbar>
+
+    <ion-slides [options]="option" class="ion-margin-top">
+
+        <ion-slide>
+            <ion-card>
+                <img src="assets/images/01.jpg">
+            </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card>
+                <img src="assets/images/02.jpg">
+            </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card>
+                <img src="assets/images/03.jpg">
+            </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card>
+                <img src="assets/images/04.jpg">
+            </ion-card>
+        </ion-slide>
+
+    </ion-slides>
+
+        <ion-row class="ion-align-items-center ion-margin-top">
+            <ion-col size="10" offset="1">
+                <ion-button
+                    href="horario"
+                    color="tertiary"
+                    expand="block"
+                    size="small"
+                >
+                    Horario
+                </ion-button>
+
+            </ion-col>
+            <ion-col size="10" offset="1">
+                <ion-button
+                    href="notas"
+                    color="secondary"
+                    expand="block"
+                    size="small"
+                >
+                    Actividades
+                </ion-button>
+            </ion-col>
+
+            <ion-col size="10" offset="1">
+                <ion-button
+                    href="notas"
+                    color="secondary"
+                    expand="block"
+                    size="small"
+                >
+                    Anuncios
+                </ion-button>
+            </ion-col>
+
+            <ion-col size="10" offset="1">
+                <ion-button
+                    href="notas"
+                    color="danger"
+                    expand="block"
+                    size="small"
+                >
+                    Puntos de interés
+                </ion-button>
+            </ion-col>
+        </ion-row>
+</ion-content>
