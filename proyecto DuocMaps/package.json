@@ -30,7 +30,7 @@
     "crypto": "^1.0.1",
     "firebase": "^9.4.0",
     "ion2-calendar": "^3.5.0",
-    "moment": "^2.29.1",
+    "moment": "^2.29.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

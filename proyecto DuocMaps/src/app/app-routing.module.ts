@@ -17,6 +17,7 @@ import { PuntoEstudiantilComponent } from 'src/pages/PuntoEstudiantil/PuntoEstud
 import { AuthGuard } from './guards/auth.guard';
 import { Iframemenos1Component } from 'src/pages/iframe/iframemenos1/iframemenos1.component';
 import { CalendarComponent } from 'src/pages/calendar/calendar.component';
+import { SalaComponent } from 'src/pages/salas/sala.component';
 
 
 
@@ -60,6 +61,11 @@ const routes: Routes = [
   {
     path: 'puntoInteres',
     component: PointComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'salas',
+    component: SalaComponent,
     canActivate: [AuthGuard]
   },
   {
