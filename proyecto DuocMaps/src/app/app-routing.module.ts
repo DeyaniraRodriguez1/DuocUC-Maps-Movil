@@ -4,7 +4,6 @@ import { LoginComponent } from 'src/pages/login/login.component';
 import { MainComponent } from 'src/pages/main/main.component';
 import { RestoreComponent } from 'src/pages/restore/restore.component';
 import { NoticeComponent } from 'src/pages/notice/notice.component';
-import { PointComponent } from 'src/pages/point/point.component';
 import { FoodPlaceComponent } from 'src/pages/food Place/foodPlace.component';
 import { BibliotecaComponent } from 'src/pages/Biblioteca/Biblioteca.component';
 import { RegisterComponent } from 'src/pages/register/register.component';
@@ -56,11 +55,6 @@ const routes: Routes = [
   {
     path: 'anuncios',
     component: NoticeComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'puntoInteres',
-    component: PointComponent,
     canActivate: [AuthGuard]
   },
   {

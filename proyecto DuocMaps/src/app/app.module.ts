@@ -11,7 +11,6 @@ import { RestoreComponent } from 'src/pages/restore/restore.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoticeComponent } from 'src/pages/notice/notice.component';
-import { PointComponent } from 'src/pages/point/point.component';
 import { SalaComponent } from 'src/pages/salas/sala.component';
 import { FoodPlaceComponent } from 'src/pages/food Place/foodPlace.component';
 import { BibliotecaComponent } from 'src/pages/Biblioteca/Biblioteca.component';
@@ -54,7 +53,6 @@ import { CalendarModule } from 'ion2-calendar';
      MainComponent, 
      RestoreComponent,
      NoticeComponent,
-     PointComponent,
      SalaComponent,
      FoodPlaceComponent,
      BibliotecaComponent,
