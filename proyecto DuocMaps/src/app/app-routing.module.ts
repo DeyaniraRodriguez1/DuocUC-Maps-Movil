@@ -17,6 +17,12 @@ import { AuthGuard } from './guards/auth.guard';
 import { Iframemenos1Component } from 'src/pages/iframe/iframemenos1/iframemenos1.component';
 import { CalendarComponent } from 'src/pages/calendar/calendar.component';
 import { SalaComponent } from 'src/pages/salas/sala.component';
+import { RecyclingFloorMenosUnoComponent } from 'src/pages/recyclingFloor-1/recyclingFloor-1.component';
+import { PointComponent } from 'src/pages/point/point.component';
+import { RecyclingComponent } from 'src/pages/Recycling/Recycling.component';
+import { RecyclingFloorDosComponent } from 'src/pages/recyclingFloor-2/recyclingFloor-2.component';
+import { RecyclingMultiComponent } from 'src/pages/RecyclingMulti/RecyclingMulti.component';
+import { RecyclingFloorCasinoComponent } from 'src/pages/RecyclingFloorCasino/RecyclingFloorCasino.component';
 
 
 
@@ -87,6 +93,37 @@ const routes: Routes = [
     path: 'PuntoEstudiantil',
     component: PuntoEstudiantilComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'recyclingFloor-1',
+    component: RecyclingFloorMenosUnoComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'puntoInteres',
+    component: PointComponent,
+    canActivate: [AuthGuard]
+
+  },
+  {
+    path: 'reciclaje',
+    component: RecyclingComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'recyclingFloor-2',
+    component: RecyclingFloorDosComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'recyclingFloorCasino',
+    component: RecyclingFloorCasinoComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'recyclingMulti',
+    component: RecyclingMultiComponent,
+    canActivate: [AuthGuard] 
   }
 
 

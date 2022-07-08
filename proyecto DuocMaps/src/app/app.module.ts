@@ -43,6 +43,13 @@ import { Iframemenos1Component } from 'src/pages/iframe/iframemenos1/iframemenos
 import { InAppBrowser} from '@ionic-native/in-app-browser/ngx';
 import { CalendarComponent } from 'src/pages/calendar/calendar.component';
 import { CalendarModule } from 'ion2-calendar';
+import { PointComponent } from 'src/pages/point/point.component';
+import { RecyclingComponent } from 'src/pages/Recycling/Recycling.component';
+import { RecyclingFloorDosComponent } from 'src/pages/recyclingFloor-2/recyclingFloor-2.component';
+import { RecyclingMultiComponent } from 'src/pages/RecyclingMulti/RecyclingMulti.component';
+import { RecyclingFloorMenosUnoComponent } from 'src/pages/recyclingFloor-1/recyclingFloor-1.component';
+import { RecyclingFloorCasinoComponent } from 'src/pages/RecyclingFloorCasino/RecyclingFloorCasino.component';
+
 
 
 
@@ -63,8 +70,14 @@ import { CalendarModule } from 'ion2-calendar';
      PerfilmodComponent,
      ProfileComponent,
      Iframemenos1Component,
-     CalendarComponent],
-  entryComponents: [],
+     CalendarComponent,
+     RecyclingFloorMenosUnoComponent,
+     PointComponent,
+     RecyclingComponent,
+     RecyclingFloorDosComponent,
+     RecyclingFloorCasinoComponent,
+     RecyclingMultiComponent],
+  entryComponents: [], 
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
